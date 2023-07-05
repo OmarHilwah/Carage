@@ -1,4 +1,4 @@
-.main-review {
+/* .main-review {
   background-image: url(../../public/images/img-10.jpg);
   height: 200px;
   width: 200px;
@@ -37,4 +37,59 @@ button {
 
 button:hover {
   background-color: #555;
+} */
+
+.main-review {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.postSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.userPost,
+.userComment {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submitButton {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #45a049;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .main-review {
+    font-size: 32px;
+  }
+
+  .postSection {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .userPost,
+  .userComment {
+    width: 200px;
+    margin-right: 20px;
+  }
 }
